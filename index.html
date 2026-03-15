@@ -49,233 +49,89 @@
         linear-gradient(180deg, var(--bg1), var(--bg0) 55%, var(--bg2));
     }
 
-    .topbar{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      margin-bottom:14px;
-    }
-
-    .titleRow{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+    .titleRow{display:flex;align-items:center;gap:12px}
     .badgeIcon{
-      width:55px;
-      height:55px;
-      font-size:35px;
-      border-radius:12px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      background:rgba(255,255,255,.06);
-      border:1px solid var(--border);
-      box-shadow:0 10px 24px rgba(0,0,0,.35);
+      width:55px;height:55px;font-size:35px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;
+      background:rgba(255,255,255,.06);border:1px solid var(--border);box-shadow:0 10px 24px rgba(0,0,0,.35);
     }
-
     h1{margin:0;font-size:32px;letter-spacing:.2px}
     .subtitle{margin:4px 0 0;color:var(--muted);white-space:pre-line}
 
     button, a.btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.06);
-      color:#fff;
-      font-weight:800;
-      cursor:pointer;
-      text-decoration:none;
-      transition:transform .05s ease, background .2s ease;
-      user-select:none;
+      display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;font-weight:800;cursor:pointer;
+      text-decoration:none;transition:transform .05s ease, background .2s ease;user-select:none;
     }
-
     button:active{transform:translateY(1px)}
     button:disabled{opacity:.5;cursor:not-allowed}
-
-    .langBtn{
-      padding:10px 12px;
-      border-radius:14px;
-      background:rgba(255,255,255,.04);
-    }
+    .langBtn{padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.04)}
 
     .card{
       background:
         linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)),
         linear-gradient(180deg, var(--card0), var(--card1));
-      border:1px solid var(--border);
-      border-radius:22px;
-      padding:16px;
-      margin:14px 0;
-      box-shadow:
-        0 22px 60px rgba(0,0,0,.55),
-        0 1px 0 rgba(255,255,255,.05) inset;
+      border:1px solid var(--border);border-radius:22px;padding:16px;margin:14px 0;
+      box-shadow:0 22px 60px rgba(0,0,0,.55),0 1px 0 rgba(255,255,255,.05) inset;
     }
 
     .emailTextCard pre{
-      margin:10px 0 0;
-      white-space:pre-wrap;
-      background:rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:14px;
-      padding:14px;
-      color:rgba(232,242,255,.94);
-      font-family:inherit;
-      line-height:1.7;
+      margin:10px 0 0;white-space:pre-wrap;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;padding:14px;color:rgba(232,242,255,.94);font-family:inherit;line-height:1.7;
     }
 
-    .signatureCard{
-      background:var(--info0);
-      border:1px solid var(--info1);
-    }
-
-    .signatureTitle{
-      margin:0 0 8px;
-      font-size:20px;
-    }
-
-    .signatureText{
-      color:var(--muted);
-      margin:0 0 12px;
-      white-space:pre-line;
-    }
-
-    .inputWrap{
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-    }
-
-    .label{
-      font-weight:700;
-    }
-
+    .signatureCard{background:var(--info0);border:1px solid var(--info1)}
+    .signatureTitle{margin:0 0 8px;font-size:20px}
+    .signatureText{color:var(--muted);margin:0 0 12px;white-space:pre-line}
+    .inputWrap{display:flex;flex-direction:column;gap:8px}
+    .label{font-weight:700}
     .nameInput{
-      width:100%;
-      padding:14px 16px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.14);
-      background:var(--inputBg);
-      color:var(--text);
-      font-size:16px;
-      outline:none;
+      width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.14);
+      background:var(--inputBg);color:var(--text);font-size:16px;outline:none;
     }
-
-    .nameInput::placeholder{
-      color:rgba(232,242,255,.45);
-    }
-
-    .inputHint{
-      color:var(--muted);
-      font-size:.95rem;
-      margin:0;
-    }
+    .nameInput::placeholder{color:rgba(232,242,255,.45)}
+    .inputHint{color:var(--muted);font-size:.95rem;margin:0}
 
     .panel{
-      border-radius:22px;
-      padding:16px;
-      border:1px solid var(--border);
-      background:rgba(255,255,255,.03);
-      position:relative;
-      overflow:hidden;
-      box-shadow:0 18px 44px rgba(0,0,0,.42);
-      margin-top:14px;
+      border-radius:22px;padding:16px;border:1px solid var(--border);background:rgba(255,255,255,.03);
+      position:relative;overflow:hidden;box-shadow:0 18px 44px rgba(0,0,0,.42);margin-top:14px;
     }
-
     .panel::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      opacity:.22;
-      background: radial-gradient(900px 320px at 0% 0%, var(--accent), transparent 55%);
-      pointer-events:none;
+      content:"";position:absolute;inset:-2px;opacity:.22;
+      background: radial-gradient(900px 320px at 0% 0%, var(--accent), transparent 55%);pointer-events:none;
     }
-
-    .panelHeader{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:10px;
-      position:relative;
-    }
-
+    .panelHeader{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;position:relative}
     .panelTitle{margin:0;font-size:22px;line-height:1.25}
-
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.16);
-      background:rgba(0,0,0,.15);
-      font-weight:900;
-      white-space:nowrap;
+      display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.16);
+      background:rgba(0,0,0,.15);font-weight:900;white-space:nowrap;
     }
-
-    .dot{
-      width:10px;
-      height:10px;
-      border-radius:999px;
-      background:var(--accent);
-      box-shadow:0 0 0 3px rgba(255,255,255,.06);
-    }
-
-    .meta{margin:10px 0 12px;color:var(--muted);position:relative}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 3px rgba(255,255,255,.06)}
+    .meta{margin:10px 0 12px;color:#fff;position:relative;font-weight:900;line-height:1.7}
 
     .sendBox{
-      position:relative;
-      border-radius:18px;
-      padding:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(0,0,0,.16);
+      position:relative;border-radius:18px;padding:14px;border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.16);
     }
-
     .sendBtn{
-      width:100%;
-      padding:14px 14px;
-      border-radius:16px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.16);
-      font-size:16px;
+      width:100%;padding:14px 14px;border-radius:16px;background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.16);font-size:16px;
     }
 
     .statusLine{margin-top:10px;color:var(--muted)}
     .bullets{margin:10px 0 0 18px;color:var(--muted)}
     .bullets li{margin:6px 0}
-
     details{margin-top:10px}
     details summary{cursor:pointer;font-weight:900}
-
-    .mono{
-      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
-      unicode-bidi:plaintext;
-      word-break:break-word;
-    }
-
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;unicode-bidi:plaintext;word-break:break-word}
     pre.mono{
-      white-space:pre-wrap;
-      background:rgba(0,0,0,.22);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:14px;
-      padding:12px;
-      margin:10px 0 0;
-      color:rgba(232,242,255,.92);
+      white-space:pre-wrap;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.10);border-radius:14px;
+      padding:12px;margin:10px 0 0;color:rgba(232,242,255,.92);
     }
-
     .files{margin-top:10px;color:var(--muted);font-size:.95rem}
     .error{color:#ffb4b4}
 
     @media (max-width:700px){
-      .topbar{
-        flex-direction:column;
-        align-items:flex-start;
-      }
+      .topbar{flex-direction:column;align-items:flex-start}
     }
   </style>
 </head>
@@ -293,15 +149,9 @@
     <button id="langBtn" class="langBtn" type="button"></button>
   </div>
 
-  <div class="card emailTextCard">
-    <h2 id="aboutTitle"></h2>
-    <pre id="aboutText"></pre>
-  </div>
-
   <div class="card signatureCard">
     <h2 class="signatureTitle" id="signatureTitle"></h2>
     <p class="signatureText" id="signatureNote"></p>
-
     <div class="inputWrap">
       <label class="label" id="nameLabel" for="fullName"></label>
       <input id="fullName" class="nameInput" type="text" autocomplete="name" />
@@ -320,24 +170,25 @@
 
     <div class="sendBox">
       <button class="sendBtn" id="sendBtn" disabled></button>
-
       <div class="statusLine">
         <span id="statusLabel"></span>
         <span id="status">—</span>
         <span id="error" class="error"></span>
       </div>
-
       <ul class="bullets" id="bullets"></ul>
-
       <details>
         <summary id="previewSummary"></summary>
         <div class="statusLine"><b id="previewSubjectLabel"></b> <span class="mono" id="previewSubject"></span></div>
         <pre class="mono" id="previewBody"></pre>
       </details>
-
       <div class="files" id="files"></div>
     </div>
   </section>
+
+  <div class="card emailTextCard">
+    <h2 id="aboutTitle"></h2>
+    <pre id="aboutText"></pre>
+  </div>
 
 <script>
   let LANG = "fa";
@@ -383,16 +234,15 @@
       namePlaceholder:"نام خود را اینجا بنویسید",
       nameHint:"این قسمت اختیاری است.",
       toggle:"🌐 EN",
-
+      panelMeta:(total,batch)=>`نکته مهم: در مجموع ${total} ایمیل بارگذاری شده است. هر بار فقط ${batch} گیرنده انتخاب می‌شود تا احتمال شناسایی به‌عنوان اسپم توسط سامانه‌های ایمیل کمتر شود. اگر این کار را چند بار تکرار کنید، در نهایت کل فهرست پوشش داده می‌شود. لطفاً هنگام ارسال صفحه را رفرش نکنید و نبندید، چون در غیر این صورت ترتیب دسته‌ها از ابتدا شروع می‌شود.`,
       panelTitle:"ارسال ایمیل به اعضای پارلمان فنلاند",
       panelGroup:"پارلمان فنلاند",
-      panelMeta:"گیرندگان: لیست ایمیل ۱ • متن: پیام ۱",
       sendBtn:"✅ ارسال ایمیل",
       statusLabel:"وضعیت: ",
       loaded:(n)=>`بارگذاری شد: ${n} ایمیل`,
       bullets:[
         "پیش‌نویس ایمیل با گیرندگان آماده می‌شود.",
-        "اولین گیرنده در To و بقیه گیرندگان در Bcc قرار می‌گیرند.",
+        "هر بار فقط ۴۰ گیرنده انتخاب می‌شود.",
         "در صورت وارد کردن نام، نام شما در پایان ایمیل اضافه می‌شود."
       ],
       previewSummary:"نمایش موضوع و متن ایمیل",
@@ -436,16 +286,15 @@ Respectfully,`,
       namePlaceholder:"Write your name here",
       nameHint:"This field is optional.",
       toggle:"🌐 FI",
-
+      panelMeta:(total,batch)=>`Important: ${total} emails are loaded in total. Only ${batch} recipients are selected each time to reduce the chance of being flagged as spam by email systems. If you repeat this enough times, the full list will eventually be covered. Please do not refresh or close the page while sending, otherwise the batch order will start again from the beginning.`,
       panelTitle:"Send email to members of the Finnish Parliament",
       panelGroup:"Finnish Parliament",
-      panelMeta:"Recipients: email list 1 • Text: message 1",
       sendBtn:"✅ Send email",
       statusLabel:"Status: ",
       loaded:(n)=>`Loaded: ${n} emails`,
       bullets:[
         "A draft email with recipients is prepared.",
-        "The first recipient goes in To and the rest go in Bcc.",
+        "Only 40 recipients are selected each time.",
         "If a name is entered, it is added at the end of the email."
       ],
       previewSummary:"Show subject and body",
@@ -458,50 +307,49 @@ Respectfully,`,
     fi: {
       dir:"ltr",
       title:"Suomen sähköpostikampanja",
-      subtitle:"Yhdellä klikkauksella valmis luonnos avautuu sähköpostisovelluksessasi.\nEnsimmäinen vastaanottaja sijoitetaan To-kenttään ja muut vastaanottajat Bcc-kenttään.",
-      aboutTitle:"Sähköpostiviestin käännös",
+      subtitle:"Yhdellä klikkauksella avautuu valmis luonnos sähköpostisovelluksessasi.\nEnsimmäinen vastaanottaja sijoitetaan To-kenttään ja muut vastaanottajat lisätään Bcc-kenttään.",
+      aboutTitle:"Sähköpostitekstin käännös",
       aboutText:`Aihe: Vetoomus Suomen parlamentille: tuki Iranin kansalle, Iranin alueelliselle koskemattomuudelle ja kruununprinssi Reza Pahlavin roolille
 
 Teksti:
 
-Arvoisat Suomen parlamentin edustajat,
+Arvoisat Suomen parlamentin jäsenet,
 
-Kirjoitamme teille Iranin kansalaisina ja ihmisoikeuksien tukijoina, jotka asuvat Suomessa ja muualla Euroopassa, kiinnittääksemme huomionne Iranin kansan tilanteeseen ja siihen, kuinka tärkeää on, että Suomi omaksuu selkeän ja johdonmukaisen kannan.
+Kirjoitamme teille iranilaisina kansalaisina ja ihmisoikeuksien tukijoina, jotka asuvat Suomessa ja muualla Euroopassa, kiinnittääksemme huomionne Iranin kansan tilanteeseen ja siihen, kuinka tärkeää on Suomen selkeä ja johdonmukainen kanta.
 
-Iranin kansa ansaitsee vapauden, arvokkuuden ja perusoikeuksiensa täyden tunnustamisen. Lähes puolen vuosisadan ajan se on elänyt Islamilaisen tasavallan sorron alla, järjestelmän, joka on riistänyt miljoonilta kansalaisilta heidän perustavanlaatuisimmat vapautensa. Tässä historiallisessa hetkessä on välttämätöntä, että Suomi tukee päättäväisesti ja yksiselitteisesti Iranin kansaa sen pyrkimyksessä tehdä loppu tästä hallinnosta.
+Iranin kansa ansaitsee vapauden, ihmisarvon ja perusoikeuksiensa täyden tunnustamisen. Lähes puolen vuosisadan ajan he ovat eläneet Islamilaisen tasavallan sorron alla, järjestelmän, joka on riistänyt miljoonilta kansalaisilta heidän kaikkein perustavimmat vapautensa. Tässä historiallisessa hetkessä on välttämätöntä, että Suomi tukee päättäväisesti ja yksiselitteisesti Iranin kansaa heidän kamppailussaan tämän hallinnon lopettamiseksi.
 
-Miljoonat iranilaiset sekä maan sisällä että sen ulkopuolella vaativat Islamilaisen tasavallan loppua ja vapaan, demokraattisen sekä ihmisoikeuksia kunnioittavan Iranin rakentamista. Tässä historiallisessa prosessissa monet iranilaiset tunnustavat kruununprinssi Reza Pahlavin ainoaksi johtajaksi, jolla on tarvittava legitimiteetti ja uskottavuus edustaa Iranin kansan tahtoa. Hänen rooliaan rauhanomaisen siirtymän johtamisessa Islamilaisesta tasavallasta kohti demokraattista järjestelmää, jonka kansa on laillisesti valinnut, pidetään iranilaisten suuren enemmistön keskuudessa ratkaisevan tärkeänä.
+Miljoonat iranilaiset sekä maan sisällä että sen ulkopuolella vaativat Islamilaisen tasavallan loppua ja vapaan, demokraattisen ja ihmisoikeuksia kunnioittavan Iranin rakentamista. Tässä historiallisessa prosessissa monet iranilaiset tunnustavat kruununprinssi Reza Pahlavin ainoaksi johtajaksi, jolla on tarvittava legitimiteetti ja uskottavuus edustaa Iranin kansan tahtoa. Hänen rooliaan rauhanomaisen siirtymän johtamisessa Islamilaisesta tasavallasta kohti demokraattista järjestelmää, jonka kansa on laillisesti valinnut, pidetään valtaosan iranilaisten keskuudessa perustavanlaatuisen tärkeänä.
 
 Pyydämme, että:
 
-• Suomi jatkaa Iranin kansan poliittista ja moraalista tukemista sen pyrkimyksessä vapauteen ja Islamilaisen tasavallan päättymiseen.
+• Suomi jatkaa Iranin kansan poliittista ja moraalista tukemista heidän pyrkimyksessään vapauteen ja Islamilaisen tasavallan päättymiseen.
 • Iranin alueellisen koskemattomuuden loukkaamattomuus vahvistetaan kaikilla kansallisilla ja kansainvälisillä foorumeilla.
-• Iranin kansan oikeutettua tahtoa määrittää maansa tuleva institutionaalinen ja poliittinen rakenne tuetaan vahvasti.
-• Kruununprinssi Reza Pahlavin keskeinen rooli tunnustetaan tärkeänä hahmona ja pätevänä johtajana ohjaamaan rauhanomaista siirtymää Islamilaisesta tasavallasta kohti Iranin kansan valitsemaa demokraattista järjestelmää.
-• Siviilien mahdollisimman laajaa suojelua tuetaan kaikilla institutionaalisilla foorumeilla, ja ettei sotilaalliseen toimintaan osallistumatonta väestöä suojelemista pidetään ehdottomana ensisijaisuutena.
+• Annetaan vahva tuki Iranin kansan oikeutetulle tahdolle määrittää maansa tuleva institutionaalinen ja poliittinen rakenne.
+• Kruununprinssi Reza Pahlavin keskeinen rooli tunnustetaan merkittävänä hahmona ja pätevänä johtajana ohjaamaan rauhanomaista siirtymää Islamilaisesta tasavallasta kohti Iranin kansan valitsemaa demokraattista järjestelmää.
+• Siviilien maksimaalista suojaa tuetaan kaikilla institutionaalisilla foorumeilla ja että niiden väestöjen suojaa, jotka eivät osallistu sotilaalliseen toimintaan, pidetään ehdottomana prioriteettina.
 
-Esitämme tämän vetoomuksen kunnioittaen Suomen demokraattisia arvoja ja niitä jakaen sekä siinä vakaassa uskossa, että vapaus, itsemääräämisoikeus ja siviilien suojelu ovat yleismaailmallisesti tunnustettuja periaatteita, joita on puolustettava kaikkialla ja kaikissa virallisissa yhteyksissä.
+Esitämme tämän vetoomuksen kunnioittaen ja jakaen niitä demokraattisia arvoja, jotka ohjaavat Suomea, ja siinä vakaumuksessa, että vapaus, itsemääräämisoikeus ja siviilien suojelu ovat yleismaailmallisesti tunnustettuja periaatteita, joita on puolustettava kaikkialla ja kaikissa virallisissa yhteyksissä.
 
 Kunnioittavasti,`,
       signatureTitle:"Allekirjoituksesi",
-      signatureNote:"Kirjoita nimesi allekirjoitusta varten, jotta sähköpostille tulee enemmän painoarvoa.\nEmme tallenna näitä tietoja tai nimeäsi mihinkään, joten olet turvassa.\nVoit halutessasi muuttaa sähköpostin tekstiä hieman, jotta se ei ole täysin toistuva.\nJos tarvitset tätä alustaa myös muihin maihin, kerro meille.",
+      signatureNote:"Kirjoita nimesi allekirjoitukseen, jotta sähköposti saa enemmän painoarvoa.\nEmme tallenna näitä tietoja tai nimeäsi mihinkään, joten olet turvassa.\nVoit halutessasi muuttaa sähköpostin tekstiä hieman, jotta se ei ole täysin toistuva.\nJos tarvitset tätä alustaa myös muille maille, kerro meille.",
       nameLabel:"Koko nimi",
       namePlaceholder:"Kirjoita nimesi tähän",
       nameHint:"Tämä kenttä on valinnainen.",
       toggle:"🌐 FA",
-
+      panelMeta:(total,batch)=>`Tärkeä huomio: yhteensä ${total} sähköpostiosoitetta on ladattu. Vain ${batch} vastaanottajaa valitaan kerrallaan, jotta viesti merkittäisiin harvemmin roskapostiksi sähköpostijärjestelmissä. Jos toistat tämän riittävän monta kertaa, koko lista tulee lopulta katettua. Älä päivitä tai sulje sivua lähettämisen aikana, muuten eräjärjestys alkaa alusta.`,
       panelTitle:"Lähetä sähköposti Suomen parlamentin jäsenille",
       panelGroup:"Suomen parlamentti",
-      panelMeta:"Vastaanottajat: sähköpostilista 1 • Teksti: viesti 1",
       sendBtn:"✅ Lähetä sähköposti",
       statusLabel:"Tila: ",
       loaded:(n)=>`Ladattu: ${n} sähköpostia`,
       bullets:[
         "Sähköpostiluonnos vastaanottajineen valmistellaan.",
-        "Ensimmäinen vastaanottaja menee To-kenttään ja loput Bcc-kenttään.",
+        "Vain 40 vastaanottajaa valitaan kerrallaan.",
         "Jos nimi syötetään, se lisätään sähköpostin loppuun."
       ],
-      previewSummary:"Näytä aihe ja viesti",
+      previewSummary:"Näytä aihe ja teksti",
       subjectLabel:"Aihe:",
       files:"Tiedostot: mail1.txt + message1.txt",
       dash:"—",
@@ -510,23 +358,12 @@ Kunnioittavasti,`,
   };
 
   const PANEL = {
-    mailFile:"mail1.txt",
-    msgFile:"message1.txt",
-    emails:[],
-    subject:"",
-    body:"",
-    loaded:false,
-    error:""
+    mailFile:"mail1.txt", msgFile:"message1.txt", emails:[], shuffledEmails:[], batchSize:40, batchIndex:0, subject:"", body:"", loaded:false, error:""
   };
 
   function setLang(lang){
-    LANG = lang;
-    const t = UI[LANG];
-
-    document.documentElement.lang = LANG;
-    document.documentElement.dir = t.dir;
-    document.title = t.title;
-
+    LANG = lang; const t = UI[LANG];
+    document.documentElement.lang = LANG; document.documentElement.dir = t.dir; document.title = t.title;
     document.getElementById("pageTitle").textContent = t.title;
     document.getElementById("pageSubtitle").textContent = t.subtitle;
     document.getElementById("aboutTitle").textContent = t.aboutTitle;
@@ -537,199 +374,108 @@ Kunnioittavasti,`,
     document.getElementById("fullName").placeholder = t.namePlaceholder;
     document.getElementById("nameHint").textContent = t.nameHint;
     document.getElementById("langBtn").textContent = t.toggle;
-
     document.getElementById("panelTitle").textContent = t.panelTitle;
     document.getElementById("pillLabel").textContent = t.panelGroup;
-    document.getElementById("panelMeta").textContent = t.panelMeta;
+    document.getElementById("panelMeta").textContent = typeof t.panelMeta === "function" ? t.panelMeta(PANEL.emails.length || 0, PANEL.batchSize) : t.panelMeta;
     document.getElementById("sendBtn").textContent = t.sendBtn;
     document.getElementById("statusLabel").textContent = t.statusLabel;
     document.getElementById("previewSummary").textContent = t.previewSummary;
     document.getElementById("previewSubjectLabel").textContent = t.subjectLabel;
     document.getElementById("files").textContent = t.files;
-
     renderPanel();
   }
 
   document.getElementById("langBtn").addEventListener("click", () => {
     const previousLang = LANG;
     const next = (LANG === "fa") ? "en" : (LANG === "en") ? "fi" : "fa";
-
-    trackEvent("language_switch", {
-      event_category: "engagement",
-      event_label: "language button",
-      from_language: previousLang,
-      to_language: next,
-      page_name: "finland_campaign"
-    });
-
+    trackEvent("language_switch", { event_category:"engagement", event_label:"language button", from_language:previousLang, to_language:next, page_name:"finland_campaign" });
     setLang(next);
   });
 
   document.getElementById("fullName").addEventListener("input", (e) => {
     if (!nameInputTracked && e.target.value.trim().length > 0) {
       nameInputTracked = true;
-      trackEvent("name_input_started", {
-        event_category: "engagement",
-        event_label: "signature name input",
-        language: LANG,
-        page_name: "finland_campaign"
-      });
+      trackEvent("name_input_started", { event_category:"engagement", event_label:"signature name input", language:LANG, page_name:"finland_campaign" });
     }
     renderPanel();
   });
 
-  function normalizeEmails(text){
-    return text
-      .split(/\r?\n/)
-      .map(l => l.trim())
-      .filter(Boolean)
-      .filter(l => !l.startsWith("#"));
-  }
-
+  function normalizeEmails(text){ return text.split(/\r?\n/).map(l => l.trim()).filter(Boolean).filter(l => !l.startsWith("#")); }
   function parseMessage(text){
     const subjectLine = text.match(/^SUBJECT:\s*(.*)$/m);
     const bodySplit = text.split(/^\s*BODY:\s*$/m);
-
-    const subject = subjectLine ? subjectLine[1].trim() : "";
-    const body = (bodySplit.length > 1) ? bodySplit.slice(1).join("\n").trim() : "";
-    return { subject, body };
+    return { subject: subjectLine ? subjectLine[1].trim() : "", body: (bodySplit.length > 1) ? bodySplit.slice(1).join("\n").trim() : "" };
   }
-
-  function getSignedBody(body){
-    const name = document.getElementById("fullName").value.trim();
-    if(!name) return body || "";
-    const safeBody = body || "";
-    return `${safeBody}\n\n${name}`;
-  }
-
+  function getSignedBody(body){ const name = document.getElementById("fullName").value.trim(); return !name ? (body || "") : `${body || ""}\n\n${name}`; }
   function buildMailto(emails, subject, body){
-    const to = emails[0] || "";
-    const bccList = emails.slice(1);
-
-    const toEncoded = encodeURIComponent(to);
-    const bccEncoded = encodeURIComponent(bccList.join(","));
-    const s = encodeURIComponent(subject || "");
-    const b = encodeURIComponent(body || "");
-
-    let url = `mailto:${toEncoded}?subject=${s}&body=${b}`;
-
-    if (bccList.length > 0) {
-      url += `&bcc=${bccEncoded}`;
-    }
-
+    const to = emails[0] || "", bccList = emails.slice(1);
+    let url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject || "")}&body=${encodeURIComponent(body || "")}`;
+    if (bccList.length > 0) url += `&bcc=${encodeURIComponent(bccList.join(","))}`;
     return url;
   }
-
-  function setPanelError(msg){
-    PANEL.error = msg;
-    const errEl = document.getElementById("error");
-    errEl.textContent = msg ? (" — " + msg) : "";
+  function shuffleArray(arr){
+    const a = [...arr];
+    for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
   }
-
+  function getNextBatchEmails(){
+    if (!PANEL.shuffledEmails.length) return [];
+    if (PANEL.batchIndex >= PANEL.shuffledEmails.length) { PANEL.shuffledEmails = shuffleArray(PANEL.emails); PANEL.batchIndex = 0; }
+    const batch = PANEL.shuffledEmails.slice(PANEL.batchIndex, PANEL.batchIndex + PANEL.batchSize);
+    PANEL.batchIndex += PANEL.batchSize;
+    return batch;
+  }
+  function setPanelError(msg){ PANEL.error = msg; document.getElementById("error").textContent = msg ? (" — " + msg) : ""; }
   function renderPanel(){
-    const t = UI[LANG];
-    const finalBody = getSignedBody(PANEL.body);
-
+    const t = UI[LANG], finalBody = getSignedBody(PANEL.body);
     document.getElementById("status").textContent = PANEL.loaded ? t.loaded(PANEL.emails.length || 0) : t.loaded(0);
-
-    const ul = document.getElementById("bullets");
-    ul.innerHTML = "";
-    for(const line of t.bullets){
-      const li = document.createElement("li");
-      li.textContent = line;
-      ul.appendChild(li);
-    }
-
+    const ul = document.getElementById("bullets"); ul.innerHTML = "";
+    for(const line of t.bullets){ const li = document.createElement("li"); li.textContent = line; ul.appendChild(li); }
     document.getElementById("previewSubject").textContent = PANEL.subject || t.dash;
     document.getElementById("previewBody").textContent = finalBody || t.dash;
-
-    const ready = PANEL.loaded && PANEL.emails.length > 0 && (PANEL.subject.length > 0 || PANEL.body.length > 0) && !PANEL.error;
-    document.getElementById("sendBtn").disabled = !ready;
+    document.getElementById("sendBtn").disabled = !(PANEL.loaded && PANEL.emails.length > 0 && (PANEL.subject.length > 0 || PANEL.body.length > 0) && !PANEL.error);
   }
 
   async function loadPanel(){
     setPanelError("");
-
     try{
-      const [mailRes, msgRes] = await Promise.all([
-        fetch(PANEL.mailFile, { cache:"no-store" }),
-        fetch(PANEL.msgFile, { cache:"no-store" })
-      ]);
-
+      const [mailRes, msgRes] = await Promise.all([ fetch(PANEL.mailFile, { cache:"no-store" }), fetch(PANEL.msgFile, { cache:"no-store" }) ]);
       if(!mailRes.ok) throw new Error(`${PANEL.mailFile} not found`);
       if(!msgRes.ok) throw new Error(`${PANEL.msgFile} not found`);
-
       const [mailTxt, msgTxt] = await Promise.all([mailRes.text(), msgRes.text()]);
-
       PANEL.emails = normalizeEmails(mailTxt);
+      PANEL.shuffledEmails = shuffleArray(PANEL.emails);
+      PANEL.batchIndex = 0;
       const parsed = parseMessage(msgTxt);
-      PANEL.subject = parsed.subject;
-      PANEL.body = parsed.body;
-      PANEL.loaded = true;
-
-      trackEvent("page_ready", {
-        event_category: "page_state",
-        event_label: "finland campaign loaded",
-        language: LANG,
-        recipient_count: PANEL.emails.length,
-        has_subject: PANEL.subject ? 1 : 0,
-        has_body: PANEL.body ? 1 : 0,
-        page_name: "finland_campaign"
-      });
-
-      renderPanel();
+      PANEL.subject = parsed.subject; PANEL.body = parsed.body; PANEL.loaded = true;
+      trackEvent("page_ready", { event_category:"page_state", event_label:"finland campaign loaded", language:LANG, recipient_count:PANEL.emails.length, has_subject:PANEL.subject ? 1 : 0, has_body:PANEL.body ? 1 : 0, batch_size:PANEL.batchSize, page_name:"finland_campaign" });
+      setLang(LANG); renderPanel();
     }catch(e){
-      PANEL.loaded = false;
-      PANEL.emails = [];
-      PANEL.subject = "";
-      PANEL.body = "";
+      PANEL.loaded = false; PANEL.emails = []; PANEL.shuffledEmails = []; PANEL.batchIndex = 0; PANEL.subject = ""; PANEL.body = "";
       setPanelError(UI[LANG].errorPrefix + e.message);
-
-      trackEvent("page_load_error", {
-        event_category: "page_state",
-        event_label: "finland campaign load error",
-        language: LANG,
-        error_message: String(e.message || "unknown error"),
-        page_name: "finland_campaign"
-      });
-
+      trackEvent("page_load_error", { event_category:"page_state", event_label:"finland campaign load error", language:LANG, error_message:String(e.message || "unknown error"), page_name:"finland_campaign" });
       renderPanel();
     }
   }
 
   document.getElementById("sendBtn").addEventListener("click", () => {
     if(!PANEL.loaded || !PANEL.emails.length) return;
-
+    const batchEmails = getNextBatchEmails(); if(!batchEmails.length) return;
     const finalBody = getSignedBody(PANEL.body);
-    const mailtoUrl = buildMailto(PANEL.emails, PANEL.subject, finalBody);
-
+    const mailtoUrl = buildMailto(batchEmails, PANEL.subject, finalBody);
     let navigated = false;
-    const openMailClient = () => {
-      if (navigated) return;
-      navigated = true;
-      window.location.href = mailtoUrl;
-    };
-
+    const openMailClient = () => { if (navigated) return; navigated = true; window.location.href = mailtoUrl; };
     trackEvent("send_email_click", {
-      event_category: "email_campaign",
-      event_label: "Finland Parliament Send Button",
-      language: LANG,
-      recipient_count: PANEL.emails.length,
-      has_name: document.getElementById("fullName").value.trim() ? 1 : 0,
-      page_name: "finland_campaign",
-      value: 1,
-      event_callback: openMailClient,
-      event_timeout: 1200
+      event_category:"email_campaign", event_label:"Finland Parliament Send Button", language:LANG,
+      recipient_count:batchEmails.length, total_recipient_pool:PANEL.emails.length,
+      has_name:document.getElementById("fullName").value.trim() ? 1 : 0,
+      batch_start_index:Math.max(PANEL.batchIndex - PANEL.batchSize, 0), batch_size:PANEL.batchSize,
+      page_name:"finland_campaign", value:1, event_callback:openMailClient, event_timeout:1200
     });
-
     setTimeout(openMailClient, 1300);
   });
 
-  (async function init(){
-    setLang("fa");
-    await loadPanel();
-    renderPanel();
-  })();
+  (async function init(){ setLang("fa"); await loadPanel(); renderPanel(); })();
 </script>
 
 </body>
